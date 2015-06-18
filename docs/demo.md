@@ -6,8 +6,8 @@ prev: ../
 
 ## 使用演示
 
-- Demo 对应 Less
-- Demo 对应 JS
+- [Demo 对应 Less](https://github.com/amazeui/swiper/blob/master/docs/demo.less)
+- [Demo 对应 JS](https://github.com/amazeui/swiper/blob/master/docs/demo.js)
 
 ### 默认设置
 
