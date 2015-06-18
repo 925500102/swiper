@@ -1,0 +1,590 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Amaze UI swiper 使用演示 | Amaze UI 插件</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png"
+        href="http://s.amazeui.org/assets/2.x/i/favicon.png">
+  <link rel="stylesheet"
+        href="http://cdn.amazeui.org/amazeui/2.4.0/css/amazeui.min.css">
+  <link rel="stylesheet" href="http://s.amazeui.org/assets/plugin/css/app.min.css">
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="http://cdn.amazeui.org/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://cdn.amazeui.org/amazeui/2.4.0/js/amazeui.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../amazeui.swiper.css"/><link rel="stylesheet" href="demo.css"/>
+</head>
+<body class="am-plugin">
+<header class="am-topbar am-topbar-inverse">
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="http://amazeui.org" class="am-text-ir">Amaze UI</a>
+      <span class="am-badge am-badge-danger">Plugin</span>
+    </h1>
+  </div>
+</header>
+<section class="amp-banner">
+  <div class="am-container">
+    <h1>Amaze UI Swiper</h1>
+    <p class="">Amaze UI styled swiper</p>
+      <p>
+        <a class="github-button" href="https://github.com/amazeui/swiper">Star</a>
+        <a class="github-button" href="https://github.com/amazeui/swiper">Fork</a>
+        <a class="github-button" href="https://github.com/amazeui/swiper/archive/master.zip">Download</a>
+      </p>
+  </div>
+</section>
+
+<section class="amp-main">
+  <div class="am-container amp-content">
+    <h2><a name="shi-yong-yan-shi" class="anchor" href="#shi-yong-yan-shi"><span class="header-link"></span></a>使用演示</h2><ul>
+<li><a href="https://github.com/amazeui/swiper/blob/master/docs/demo.less">Demo 对应 Less</a></li>
+<li><a href="https://github.com/amazeui/swiper/blob/master/docs/demo.js">Demo 对应 JS</a></li>
+</ul>
+<h3><a name="mo-ren-she-zhi" class="anchor" href="#mo-ren-she-zhi"><span class="header-link"></span></a>默认设置</h3><div class="doc-example"><div class="swiper-container demo" id="demo1">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+</div></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container demo"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"demo1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#demo1'</span>).swiper();</code></pre></div><h3><a name="fen-ye-biao-ji" class="anchor" href="#fen-ye-biao-ji"><span class="header-link"></span></a>分页标记</h3><div class="doc-example"><div class="swiper-container demo" id="demo2">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container demo"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"demo2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Add Pagination --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-pagination"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#demo2'</span>).swiper({
+  pagination: <span class="hljs-string">'#demo2 .swiper-pagination'</span>,
+  paginationClickable: <span class="hljs-literal">true</span>
+});</code></pre></div><h3><a name="chui-zhi-gun-dong" class="anchor" href="#chui-zhi-gun-dong"><span class="header-link"></span></a>垂直滚动</h3><div class="doc-example"><div class="swiper-container demo" id="demo3">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container demo"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"demo3"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Add Pagination --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-pagination"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#demo3'</span>).swiper({
+  pagination: <span class="hljs-string">'#demo3 .swiper-pagination'</span>,
+  paginationClickable: <span class="hljs-literal">true</span>,
+  direction: <span class="hljs-string">'vertical'</span>
+});</code></pre></div><h3><a name="slide-jian-ju" class="anchor" href="#slide-jian-ju"><span class="header-link"></span></a>slide 间距</h3><div class="doc-example"><div class="swiper-container demo" id="demo4">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container demo"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"demo4"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Add Pagination --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-pagination"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#demo4'</span>).swiper({
+  pagination: <span class="hljs-string">'#demo4 .swiper-pagination'</span>,
+  paginationClickable: <span class="hljs-literal">true</span>,
+  spaceBetween: <span class="hljs-number">30</span>
+});</code></pre></div><h3><a name="slidesperview-yi-ping-duo-ge-slide" class="anchor" href="#slidesperview-yi-ping-duo-ge-slide"><span class="header-link"></span></a>slidesPerView - 一屏多个 slide</h3><div class="doc-example"><div class="swiper-container demo" id="demo5">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container demo"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"demo5"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Add Pagination --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-pagination"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#demo5'</span>).swiper({
+  pagination: <span class="hljs-string">'#demo5 .swiper-pagination'</span>,
+  slidesPerView: <span class="hljs-number">3</span>,
+  paginationClickable: <span class="hljs-literal">true</span>,
+  spaceBetween: <span class="hljs-number">30</span>
+});</code></pre></div><h3><a name="slidesperview-39auto39" class="anchor" href="#slidesperview-39auto39"><span class="header-link"></span></a>slidesPerView: &#39;auto&#39;</h3><div class="doc-example"><div class="swiper-container demo" id="demo6">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#demo6'</span>).swiper({
+  pagination: <span class="hljs-string">'#demo6 .swiper-pagination'</span>,
+  slidesPerView: <span class="hljs-string">'auto'</span>,
+  paginationClickable: <span class="hljs-literal">true</span>,
+  spaceBetween: <span class="hljs-number">30</span>
+});</code></pre></div><h3><a name="centeredslides-39true39" class="anchor" href="#centeredslides-39true39"><span class="header-link"></span></a>centeredSlides: &#39;true&#39;</h3><div class="doc-example"><div class="swiper-container demo" id="demo7">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="centered-slides-auto-slides-per-view" class="anchor" href="#centered-slides-auto-slides-per-view"><span class="header-link"></span></a>Centered Slides + Auto Slides Per View</h3><div class="doc-example"><div class="swiper-container demo" id="demo8">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="freemode" class="anchor" href="#freemode"><span class="header-link"></span></a>freeMode</h3><div class="doc-example"><div class="swiper-container demo" id="demo9">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="slidespercolumn-she-zhi-mei-lie-de-xing-shu" class="anchor" href="#slidespercolumn-she-zhi-mei-lie-de-xing-shu"><span class="header-link"></span></a>slidesPerColumn - 设置每列的行数</h3><div class="doc-example"><div class="swiper-container demo" id="demo10">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="qian-tao" class="anchor" href="#qian-tao"><span class="header-link"></span></a>嵌套</h3><div class="doc-example"><div class="swiper-container swiper-container-h" style="height: 200px" id="demo11">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Horizontal Slide 1</div>
+    <div class="swiper-slide">
+      <div class="swiper-container swiper-container-v" style="height: 200px">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Vertical Slide 1</div>
+          <div class="swiper-slide">Vertical Slide 2</div>
+          <div class="swiper-slide">Vertical Slide 3</div>
+          <div class="swiper-slide">Vertical Slide 4</div>
+          <div class="swiper-slide">Vertical Slide 5</div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-v"></div>
+      </div>
+    </div>
+    <div class="swiper-slide">Horizontal Slide 3</div>
+    <div class="swiper-slide">Horizontal Slide 4</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination-h"></div>
+</div></div><h3><a name="tuo-dong" class="anchor" href="#tuo-dong"><span class="header-link"></span></a>拖动</h3><div class="doc-example"><div class="swiper-container demo" id="demo12">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="gun-dong-tiao" class="anchor" href="#gun-dong-tiao"><span class="header-link"></span></a>滚动条</h3><div class="doc-example"><div class="swiper-container demo" id="demo13">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div></div><h3><a name="shang-xia-fan-ye-an-niu" class="anchor" href="#shang-xia-fan-ye-an-niu"><span class="header-link"></span></a>上下翻页按钮</h3><div class="doc-example"><div class="swiper-container demo" id="demo14">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div></div><h3><a name="xun-huan-gun-dong" class="anchor" href="#xun-huan-gun-dong"><span class="header-link"></span></a>循环滚动</h3><div class="doc-example"><div class="swiper-container demo" id="demo15">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div></div><h3><a name="fade-xiao-guo" class="anchor" href="#fade-xiao-guo"><span class="header-link"></span></a>Fade 效果</h3><div class="doc-example"><!-- Swiper -->
+<div class="swiper-container demo" id="demo16">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/1)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/2)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/3)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/4)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/5)"></div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination-white"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next swiper-button-white"></div>
+  <div class="swiper-button-prev swiper-button-white"></div>
+</div></div><h3><a name="3d-li-fang-ti-xiao-guo" class="anchor" href="#3d-li-fang-ti-xiao-guo"><span class="header-link"></span></a>3D 立方体效果</h3><div class="doc-example"><div class="swiper-container" id="demo17">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="3d-coverflow" class="anchor" href="#3d-coverflow"><span class="header-link"></span></a>3D Coverflow</h3><div class="doc-example"><div class="swiper-container" id="demo18">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/9)"></div>
+    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)"></div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="jian-pan-kong-zhi" class="anchor" href="#jian-pan-kong-zhi"><span class="header-link"></span></a>键盘控制</h3><p><a href="http://www.idangero.us/swiper/demos/19-keyboard-control.html">点击查看 Demo</a></p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#demo19'</span>).swiper({
+  pagination: <span class="hljs-string">'.swiper-pagination'</span>,
+  slidesPerView: <span class="hljs-number">1</span>,
+  paginationClickable: <span class="hljs-literal">true</span>,
+  spaceBetween: <span class="hljs-number">30</span>,
+  keyboardControl: <span class="hljs-literal">true</span>,
+  nextButton: <span class="hljs-string">'.swiper-button-next'</span>,
+  prevButton: <span class="hljs-string">'.swiper-button-prev'</span>
+});</code></pre></div><h3><a name="shu-biao-gun-lun-kong-zhi" class="anchor" href="#shu-biao-gun-lun-kong-zhi"><span class="header-link"></span></a>鼠标滚轮控制</h3><div class="doc-example"><div class="swiper-container demo" id="demo20">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="zi-dong-bo-fang" class="anchor" href="#zi-dong-bo-fang"><span class="header-link"></span></a>自动播放</h3><div class="doc-example"><div class="swiper-container demo" id="demo21">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="dong-tai-tian-jia-slide" class="anchor" href="#dong-tai-tian-jia-slide"><span class="header-link"></span></a>动态添加 Slide</h3><div class="doc-example"><div class="swiper-container demo" id="demo22">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+<hr>
+<div class="am-btn-toolbar am-text-center">
+  <a href="#" class="am-btn am-btn-secondary prepend-slide">前面插入 Slide</a>
+  <a href="#" class="am-btn am-btn-warning append-slide">后面插入 Slide</a>
+</div></div><h3><a name="suo-lue-tu-mo-shi" class="anchor" href="#suo-lue-tu-mo-shi"><span class="header-link"></span></a>缩略图模式</h3><div class="doc-example"><div class="gallery-wrapper">
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
+      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+    </div>
+  </div>
+</div></div><h3><a name="hash-dao-hang" class="anchor" href="#hash-dao-hang"><span class="header-link"></span></a>Hash 导航</h3><p>[点击查看演示]（<a href="http://www.idangero.us/swiper/demos/25-hash-navigation.html）">http://www.idangero.us/swiper/demos/25-hash-navigation.html）</a></p>
+<h3><a name="shi-chai-gun-dong" class="anchor" href="#shi-chai-gun-dong"><span class="header-link"></span></a>视差滚动</h3><div class="doc-example">
+<div class="swiper-container" id="demo25">
+  <div class="parallax-bg" style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)" data-swiper-parallax="-23%"></div>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="title" data-swiper-parallax="-100">Slide 1</div>
+      <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <div class="text" data-swiper-parallax="-300">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="title" data-swiper-parallax="-100">Slide 2</div>
+      <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <div class="text" data-swiper-parallax="-300">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="title" data-swiper-parallax="-100">Slide 3</div>
+      <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <div class="text" data-swiper-parallax="-300">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination-white"></div>
+  <!-- Add Navigation -->
+  <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="swiper-button-next swiper-button-white"></div>
+</div></div><h3><a name="zi-ding-yi-fen-ye" class="anchor" href="#zi-ding-yi-fen-ye"><span class="header-link"></span></a>自定义分页</h3><div class="doc-example"><div class="swiper-container demo" id="demo26">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
+    <div class="swiper-slide">Slide 10</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div></div><h3><a name="tu-pian-lan-jia-zai" class="anchor" href="#tu-pian-lan-jia-zai"><span class="header-link"></span></a>图片懒加载</h3><div class="doc-example"><div class="swiper-container demo" id="demo27">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+      <img data-src="http://lorempixel.com/1600/1200/nature/1" class="swiper-lazy">
+      <!-- Preloader image -->
+      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+    </div>
+    <div class="swiper-slide">
+      <img data-src="http://lorempixel.com/1600/1200/nature/2" class="swiper-lazy">
+      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+    </div>
+    <div class="swiper-slide">
+      <img data-src="http://lorempixel.com/1600/1200/nature/3" class="swiper-lazy">
+      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+    </div>
+    <div class="swiper-slide">
+      <img data-src="http://lorempixel.com/1600/1200/nature/4" class="swiper-lazy">
+      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+    </div>
+    <div class="swiper-slide">
+      <img data-src="http://lorempixel.com/1600/1200/nature/5" class="swiper-lazy">
+      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+    </div>
+    <div class="swiper-slide">
+      <img data-src="http://lorempixel.com/1600/1200/nature/6" class="swiper-lazy">
+      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+    </div>
+
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination-white"></div>
+  <!-- Navigation -->
+  <div class="swiper-button-next swiper-button-white"></div>
+  <div class="swiper-button-prev swiper-button-white"></div>
+</div></div><script src="../amazeui.swiper.js"></script>
+<script src="demo.min.js"></script>
+
+
+    <nav class="amp-pager">
+        <ul class="am-pagination">
+          <li class="am-pagination-prev"><a href="../">&laquo; Prev</a>
+          </li>
+            <li class="am-pagination-next"><a href="api.html">Next &raquo;</a>
+            </li>
+        </ul>
+    </nav>
+  </div>
+</section>
+
+<footer class="amp-footer"><div class="am-g am-g-fixed"><div class="am-u-md-4 am-u-md-push-8"><ul class="amz-social"><li><a href="javascript: void(0)" data-am-popover="{content: 'Amaze UI 交流 Q 群：374946651'}" title="Amaze UI 用户交流群" target="_blank"><span class="am-icon-qq"></span></a></li><li><a href="http://weibo.com/allmobilize" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a class="new-issue" href="https://github.com/allmobilize/amazeui/issues/new?title=Bug%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A...%20%0A%20%0A**UA:**%20%0A" target="_blank" title="Bug 反馈"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4 am-u-md-8 am-u-md-pull-4"><h2 class="amz-fd"><a>云适配</a></h2><ul class="amz-links"><li><a href="http://amazeui.org/about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="http://amazeui.org/about/contact">联系我们</a></li></ul><p class="amz-cp">&copy; 2015 AllMobilize, Inc. <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="http://s.amazeui.org/assets/2.x/i/am/qr-ui.jpg" alt="Amaze UI 微信"/><br/>在微信上关注我们</div></div></div><div class="amp-toolbar" id="amp-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amp-go-top"></a></div>
+<script src="http://s.amazeui.org/assets/plugin/js/app.min.js"></script>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?b424d39312c46404f15e22574a531fbb";
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hm);
+  })();
+
+  (function(w, d, s) {
+    function gs(){
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(w , d, s ,'//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-34196034-8', 'amazeui.org');
+      ga('send', 'pageview');
+    }
+    if (w.addEventListener) { w.addEventListener('load', gs, false); }
+    else if (w.attachEvent) { w.attachEvent('onload',gs); }
+  }(window, document, 'script'));
+</script>
+</body>
+</html>

@@ -1,59 +1,83 @@
----
-title: Amaze UI Swiper API 列表
-next: demo.html
-prev: ../
----
-
-# Amaze UI Swiper API
----
-
-## 基本使用
-
-### HTML 结构
-
-```html
-<!-- Slider 主容器，必需 -->
-<div class="swiper-container">
-
-  <!-- slides 容器，必需 -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Amaze UI Swiper API 列表 | Amaze UI 插件</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png"
+        href="http://s.amazeui.org/assets/2.x/i/favicon.png">
+  <link rel="stylesheet"
+        href="http://cdn.amazeui.org/amazeui/2.4.0/css/amazeui.min.css">
+  <link rel="stylesheet" href="http://s.amazeui.org/assets/plugin/css/app.min.css">
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="http://cdn.amazeui.org/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://cdn.amazeui.org/amazeui/2.4.0/js/amazeui.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../amazeui.swiper.css"/><link rel="stylesheet" href="demo.css"/>
+</head>
+<body class="am-plugin">
+<header class="am-topbar am-topbar-inverse">
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="http://amazeui.org" class="am-text-ir">Amaze UI</a>
+      <span class="am-badge am-badge-danger">Plugin</span>
+    </h1>
   </div>
+</header>
+<section class="amp-banner">
+  <div class="am-container">
+    <h1>Amaze UI Swiper</h1>
+    <p class="">Amaze UI styled swiper</p>
+      <p>
+        <a class="github-button" href="https://github.com/amazeui/swiper">Star</a>
+        <a class="github-button" href="https://github.com/amazeui/swiper">Fork</a>
+        <a class="github-button" href="https://github.com/amazeui/swiper/archive/master.zip">Download</a>
+      </p>
+  </div>
+</section>
 
-  <!-- 分页容器，可选 -->
-  <div class="swiper-pagination"></div>
+<section class="amp-main">
+  <div class="am-container amp-content">
+    <h1><a name="amaze-ui-swiper-api" class="anchor" href="#amaze-ui-swiper-api"><span class="header-link"></span></a>Amaze UI Swiper API</h1><hr>
+<h2><a name="ji-ben-shi-yong" class="anchor" href="#ji-ben-shi-yong"><span class="header-link"></span></a>基本使用</h2><h3><a name="html-jie-gou" class="anchor" href="#html-jie-gou"><span class="header-link"></span></a>HTML 结构</h3><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-comment">&lt;!-- Slider 主容器，必需 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container"</span>&gt;</span>
 
-  <!-- 上下翻页箭头，可选 -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <span class="hljs-comment">&lt;!-- slides 容器，必需 --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Slides --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-  <!-- 滚动条容器，可选 -->
-  <div class="swiper-scrollbar"></div>
-</div>
-```
+  <span class="hljs-comment">&lt;!-- 分页容器，可选 --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-pagination"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-### 初始化
+  <span class="hljs-comment">&lt;!-- 上下翻页箭头，可选 --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-button-prev"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-button-next"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
-```js
-// jQuery 方式初始化
-$('#container').swiper([options]);
+  <span class="hljs-comment">&lt;!-- 滚动条容器，可选 --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-scrollbar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><h3><a name="chu-shi-hua" class="anchor" href="#chu-shi-hua"><span class="header-link"></span></a>初始化</h3><div class="doc-code demo-highlight"><pre><code class="javascript"><span class="hljs-comment">// jQuery 方式初始化</span>
+$(<span class="hljs-string">'#container'</span>).swiper([options]);
 
 
-// 或者构造函数方式初始化
-var mySwiper = new Swiper(swiperContainer[, options])
+<span class="hljs-comment">// 或者构造函数方式初始化</span>
+<span class="hljs-keyword">var</span> mySwiper = <span class="hljs-keyword">new</span> Swiper(swiperContainer[, options])
 
-// `swiperContainer` - 必需，HTMLElement 或者 CSS 选择符字符串
-// options - object
-```
-
-## 选项列表
-
-没有翻译的为不太常用的选项。
-
+<span class="hljs-comment">// `swiperContainer` - 必需，HTMLElement 或者 CSS 选择符字符串</span>
+<span class="hljs-comment">// options - object</span></code></pre></div><h2><a name="xuan-xiang-lie-biao" class="anchor" href="#xuan-xiang-lie-biao"><span class="header-link"></span></a>选项列表</h2><p>没有翻译的为不太常用的选项。</p>
 <table class="am-table am-table-bordered am-table-striped">
   <thead>
   <tr>
@@ -873,16 +897,9 @@ var mySwiper = new Swiper(swiperContainer[, options])
   </tbody>
 </table>
 
-## 方法和属性
-
-所有方法和属性都可以通过 `$('#mySwiper').swiper('xxx')` 的方式调用（读取），如
-
-```js
-// 获取 swiper 的所有参数
-$('#demo1').swiper('params');
-```
-
-<table class="am-table am-table-bordered am-table-striped">
+<h2><a name="fang-fa-he-shu-xing" class="anchor" href="#fang-fa-he-shu-xing"><span class="header-link"></span></a>方法和属性</h2><p>所有方法和属性都可以通过 <code>$(&#39;#mySwiper&#39;).swiper(&#39;xxx&#39;)</code> 的方式调用（读取），如</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript"><span class="hljs-comment">// 获取 swiper 的所有参数</span>
+$(<span class="hljs-string">'#demo1'</span>).swiper(<span class="hljs-string">'params'</span>);</code></pre></div><table class="am-table am-table-bordered am-table-striped">
   <tbody>
   <tr>
     <th colspan="2" class="am-primary">属性</th>
@@ -1124,152 +1141,142 @@ $('#demo1').swiper('params');
   </tbody>
 </table>
 
-## 进阶使用
-
-### Hash 切换
-
-- 幻灯片上设置 `data-hash` 属性
-- 初始化时添加选项 `hashnav: true`
-
-```html
-<div class="swiper-container" id="hashSwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" data-hash="slide1">Slide 1</div>
-    <div class="swiper-slide" data-hash="slide2">Slide 2</div>
-    <div class="swiper-slide" data-hash="slide3">Slide 3</div>
-    <div class="swiper-slide" data-hash="slide4">Slide 4</div>
-    <div class="swiper-slide" data-hash="slide5">Slide 5</div>
+<h2><a name="jin-jie-shi-yong" class="anchor" href="#jin-jie-shi-yong"><span class="header-link"></span></a>进阶使用</h2><h3><a name="hash-qie-huan" class="anchor" href="#hash-qie-huan"><span class="header-link"></span></a>Hash 切换</h3><ul>
+<li>幻灯片上设置 <code>data-hash</code> 属性</li>
+<li>初始化时添加选项 <code>hashnav: true</code></li>
+</ul>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"hashSwiper"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span> <span class="hljs-attribute">data-hash</span>=<span class="hljs-value">"slide1"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span> <span class="hljs-attribute">data-hash</span>=<span class="hljs-value">"slide2"</span>&gt;</span>Slide 2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span> <span class="hljs-attribute">data-hash</span>=<span class="hljs-value">"slide3"</span>&gt;</span>Slide 3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span> <span class="hljs-attribute">data-hash</span>=<span class="hljs-value">"slide4"</span>&gt;</span>Slide 4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span> <span class="hljs-attribute">data-hash</span>=<span class="hljs-value">"slide5"</span>&gt;</span>Slide 5<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     ...
-  </div>
-</div>
-```
-```js
-$('#hashSwiper').swiper({
-  // enable hash navigation
-  hashnav: true
-});
-```
-
-### 视差滚动
-
-Since version 3.0.3 Swiper supports parallax transition effects for swiper/slides nested elements. There are two types of parallax elements supported:
-
-- Direct child elements of `swiper-container`. Parallax effect for such elements will depend on total slider progress. Useful for parallax backgrounds
-- Slides child elements. Parallax effect for such elements will depend on slide progress
-
-To enable parallax effects you need to init Swiper with passed `parallax:true` parameter and add `data-swiper-parallax` attribute on required elements
-
-```html
-<div class="swiper-container">
-  <!-- Parallax background element -->
-  <div
-    class="parallax-bg"
-    style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)"
-    data-swiper-parallax="-23%">
-  </div>
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <!-- Each slide has parallax title -->
-      <div class="title" data-swiper-parallax="-100">Slide 1</div>
-      <!-- Parallax subtitle -->
-      <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-      <!-- And parallax text with custom transition duration -->
-      <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
-        <p>Lorem ipsum dolor sit amet, ...</p>
-      </div>
-    </div>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#hashSwiper'</span>).swiper({
+  <span class="hljs-comment">// enable hash navigation</span>
+  hashnav: <span class="hljs-literal">true</span>
+});</code></pre></div><h3><a name="shi-chai-gun-dong" class="anchor" href="#shi-chai-gun-dong"><span class="header-link"></span></a>视差滚动</h3><p>Since version 3.0.3 Swiper supports parallax transition effects for swiper/slides nested elements. There are two types of parallax elements supported:</p>
+<ul>
+<li>Direct child elements of <code>swiper-container</code>. Parallax effect for such elements will depend on total slider progress. Useful for parallax backgrounds</li>
+<li>Slides child elements. Parallax effect for such elements will depend on slide progress</li>
+</ul>
+<p>To enable parallax effects you need to init Swiper with passed <code>parallax:true</code> parameter and add <code>data-swiper-parallax</code> attribute on required elements</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Parallax background element --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span>
+    <span class="hljs-attribute">class</span>=<span class="hljs-value">"parallax-bg"</span>
+    <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image:url(http://lorempixel.com/900/600/nightlife/2/)"</span>
+    <span class="hljs-attribute">data-swiper-parallax</span>=<span class="hljs-value">"-23%"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- Each slide has parallax title --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span> <span class="hljs-attribute">data-swiper-parallax</span>=<span class="hljs-value">"-100"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- Parallax subtitle --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"subtitle"</span> <span class="hljs-attribute">data-swiper-parallax</span>=<span class="hljs-value">"-200"</span>&gt;</span>Subtitle<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- And parallax text with custom transition duration --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">data-swiper-parallax</span>=<span class="hljs-value">"-300"</span> <span class="hljs-attribute">data-swiper-parallax-duration</span>=<span class="hljs-value">"600"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, ...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><p>All elements with specified <code>data-swiper-parallax</code> attribute will have parallax transition. This attribute may accept:</p>
+<ul>
+<li><code>number</code> - value in px (as for title, subtitle in example above) to move element depending on progress. In this case such element will be moved on ± this value in px depending on slide position (next or previous)</li>
+<li><code>percentage</code> - (as for &quot;parallax-bg&quot;) to move element depending on progress and on its size. In this case such element will be moved on ± this percentage of its size (width in horizontal direction, and height in vertical direction) depending on slide position (next or previous). So if element has 400px width and you specified data-swiper-parallax=&quot;50%&quot; then it will be moved on ± 200px
+It is possible to overwrite parallax direction by using <code>data-swiper-parallax-x</code> and <code>data-swiper-parallax-y</code> attributes with same rules</li>
+</ul>
+<p>You can also pass custom transition duration for parallax elements by adding <code>data-swiper-parallax-duration</code> attribute.</p>
+<h3><a name="lan-jia-zai" class="anchor" href="#lan-jia-zai"><span class="header-link"></span></a>懒加载</h3><p>首先需要添加 Loader 容器，并在图片上添加 <code>.swiper-lazy</code>。</p>
+<ul>
+<li>在图片上添加 <code>.swiper-lazy</code></li>
+<li>图片 <code>src</code> 属性替换为 <code>data-src</code></li>
+<li><p>每个幻灯片中添加加载图标容器</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-lazy-preloader"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><p>如果需要白色图标则使用：</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-lazy-preloader swiper-lazy-preloader-white"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+`</code></pre></div></li>
+</ul>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"path/to/picture-1.jpg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-lazy"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-lazy-preloader"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"path/to/picture-2.jpg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-lazy"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-lazy-preloader"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"path/to/picture-3.jpg"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-lazy"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-lazy-preloader"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#mySwiper'</span>).swiper({
+  <span class="hljs-comment">// Disable preloading of all images</span>
+  preloadImages: <span class="hljs-literal">false</span>,
+
+  <span class="hljs-comment">// Enable lazy loading</span>
+  lazyLoading: <span class="hljs-literal">true</span>
+});</code></pre></div><h3><a name="shi-jian-api" class="anchor" href="#shi-jian-api"><span class="header-link"></span></a>事件 API</h3><div class="doc-code demo-highlight"><pre><code class="javascript"><span class="hljs-comment">// Init Swiper</span>
+<span class="hljs-keyword">var</span> mySwiper = <span class="hljs-keyword">new</span> Swiper(<span class="hljs-string">'.swiper-container'</span>);
+
+<span class="hljs-comment">// Later add callback</span>
+mySwiper.on(<span class="hljs-string">'slideChangeStart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'slide change start'</span>);
+});
+
+<span class="hljs-comment">// Add one more handler for this event</span>
+mySwiper.on(<span class="hljs-string">'slideChangeStart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'slide change start 2'</span>);
+});
+
+<span class="hljs-comment">// Add handler that will be executed only once</span>
+mySwiper.once(<span class="hljs-string">'sliderMove'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'slider moved'</span>);
+});
+
+<span class="hljs-comment">// Somewhen later, remove all slideChangeStart handlers</span>
+mySwiper.off(<span class="hljs-string">'slideChangeStart'</span>);</code></pre></div><p>也可以使用下面的语法：</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#mySwiper'</span>).swiper(<span class="hljs-string">'on'</span>, <span class="hljs-string">'slideChangeStart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'slide change start'</span>);
+});</code></pre></div>
+
+    <nav class="amp-pager">
+        <ul class="am-pagination">
+          <li class="am-pagination-prev"><a href="../">&laquo; Prev</a>
+          </li>
+            <li class="am-pagination-next"><a href="demo.html">Next &raquo;</a>
+            </li>
+        </ul>
+    </nav>
   </div>
-</div>
-```
+</section>
 
-All elements with specified `data-swiper-parallax` attribute will have parallax transition. This attribute may accept:
+<footer class="amp-footer"><div class="am-g am-g-fixed"><div class="am-u-md-4 am-u-md-push-8"><ul class="amz-social"><li><a href="javascript: void(0)" data-am-popover="{content: 'Amaze UI 交流 Q 群：374946651'}" title="Amaze UI 用户交流群" target="_blank"><span class="am-icon-qq"></span></a></li><li><a href="http://weibo.com/allmobilize" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a class="new-issue" href="https://github.com/allmobilize/amazeui/issues/new?title=Bug%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A...%20%0A%20%0A**UA:**%20%0A" target="_blank" title="Bug 反馈"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4 am-u-md-8 am-u-md-pull-4"><h2 class="amz-fd"><a>云适配</a></h2><ul class="amz-links"><li><a href="http://amazeui.org/about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="http://amazeui.org/about/contact">联系我们</a></li></ul><p class="amz-cp">&copy; 2015 AllMobilize, Inc. <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="http://s.amazeui.org/assets/2.x/i/am/qr-ui.jpg" alt="Amaze UI 微信"/><br/>在微信上关注我们</div></div></div><div class="amp-toolbar" id="amp-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amp-go-top"></a></div>
+<script src="http://s.amazeui.org/assets/plugin/js/app.min.js"></script>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
-- `number` - value in px (as for title, subtitle in example above) to move element depending on progress. In this case such element will be moved on ± this value in px depending on slide position (next or previous)
-- `percentage` - (as for "parallax-bg") to move element depending on progress and on its size. In this case such element will be moved on ± this percentage of its size (width in horizontal direction, and height in vertical direction) depending on slide position (next or previous). So if element has 400px width and you specified data-swiper-parallax="50%" then it will be moved on ± 200px
-It is possible to overwrite parallax direction by using `data-swiper-parallax-x` and `data-swiper-parallax-y` attributes with same rules
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?b424d39312c46404f15e22574a531fbb";
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hm);
+  })();
 
-You can also pass custom transition duration for parallax elements by adding `data-swiper-parallax-duration` attribute.
-
-### 懒加载
-
-首先需要添加 Loader 容器，并在图片上添加 `.swiper-lazy`。
-- 在图片上添加 `.swiper-lazy`
-- 图片 `src` 属性替换为 `data-src`
-- 每个幻灯片中添加加载图标容器
-
-  ```html
-  <div class="swiper-lazy-preloader"></div>
-  ```
-
-  如果需要白色图标则使用：
-
-  ```html
-  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-  ````
-
-
-```html
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img data-src="path/to/picture-1.jpg" class="swiper-lazy">
-      <div class="swiper-lazy-preloader"></div>
-    </div>
-    <div class="swiper-slide">
-      <img data-src="path/to/picture-2.jpg" class="swiper-lazy">
-      <div class="swiper-lazy-preloader"></div>
-    </div>
-    <div class="swiper-slide">
-      <img data-src="path/to/picture-3.jpg" class="swiper-lazy">
-      <div class="swiper-lazy-preloader"></div>
-    </div>
-  </div>
-</div>
-```
-
-```js
-$('#mySwiper').swiper({
-  // Disable preloading of all images
-  preloadImages: false,
-
-  // Enable lazy loading
-  lazyLoading: true
-});
-```
-
-### 事件 API
-
-```js
-// Init Swiper
-var mySwiper = new Swiper('.swiper-container');
-
-// Later add callback
-mySwiper.on('slideChangeStart', function () {
-  console.log('slide change start');
-});
-
-// Add one more handler for this event
-mySwiper.on('slideChangeStart', function () {
-  console.log('slide change start 2');
-});
-
-// Add handler that will be executed only once
-mySwiper.once('sliderMove', function () {
-  console.log('slider moved');
-});
-
-// Somewhen later, remove all slideChangeStart handlers
-mySwiper.off('slideChangeStart');
-```
-
-也可以使用下面的语法：
-
-```js
-$('#mySwiper').swiper('on', 'slideChangeStart', function() {
-  console.log('slide change start');
-});
-```
-
-
-
+  (function(w, d, s) {
+    function gs(){
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(w , d, s ,'//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-34196034-8', 'amazeui.org');
+      ga('send', 'pageview');
+    }
+    if (w.addEventListener) { w.addEventListener('load', gs, false); }
+    else if (w.attachEvent) { w.attachEvent('onload',gs); }
+  }(window, document, 'script'));
+</script>
+</body>
+</html>
