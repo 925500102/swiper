@@ -1,6 +1,6 @@
 {
   "name": "amazeui-swiper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Amaze UI styled swiper",
   "main": "lib/amazeui.swiper.js",
   "style": "dist/amazeui.swiper.css",
@@ -36,11 +36,11 @@
     "gulp": "^3.9.0",
     "gulp-load-plugins": "^0.8.0",
     "run-sequence": "^1.0.2",
-    "swiper": "^3.0.8"
+    "amazeui": "^2.4.0"
   },
   "dependencies": {
-    "amazeui": "^2.4.0",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "swiper": "^3.0.8"
   },
   "browserify-shim": {
     "jquery": "global:jQuery"
