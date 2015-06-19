@@ -33,7 +33,8 @@ var config = {
     autoPrefixer: docUtil.autoprefixerBrowsers,
     dist: function(file) {
       return (file.relative.indexOf('demo') > -1) ? './dist/docs' : './dist';
-    }
+    },
+    banner: true
     // watches: './less/**/*.less'
   },
 
@@ -72,7 +73,8 @@ var config = {
     filename: 'amazeui.swiper.js',
     transforms: [['browserify-shim', {global: true}]],
     plugins: [],
-    dist: 'dist'
+    dist: 'dist',
+    banner: true
   },
 
   // clean path
